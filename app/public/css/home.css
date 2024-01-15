@@ -1,0 +1,303 @@
+:root{
+    --preto: #000000;
+    --branco: #ffffff;
+    --verde: #73EA00;
+    --cinza: #1e1e1e;
+}
+
+*{
+    margin: 0;   
+    font-family: "Inter", sans-serif;
+}
+
+main{
+    background-color: var(--branco);
+}
+
+header{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+@media screen and (max-width: 1023px){
+    header{
+        width: calc(100vw - 100px);
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+        border-bottom: 1px solid var(--verde);
+    }
+
+    nav>a{
+        display: none;
+    }
+
+    .logo-menu{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    main{
+        width: calc(100vw - 100px);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .imagem-fundo{
+        padding: 140px 50px 25px 50px;
+        width: calc(100vw - 100px);
+        height: 55vh;
+        background-color: var(--preto);
+        color: var(--branco);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo-home{
+        width: 290px;
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    .btn-contato{
+        width: 11.5rem;
+        height: 2.4rem;
+        margin-top: 2.4rem;
+        background-color: var(--verde);
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .logo-texto{
+        width: 5.8rem;
+        height: 1.75rem;
+        margin-top: 3.5rem;
+    }
+
+    .container-logo{
+        text-align: center;
+    }
+
+    .sobre-nos{
+        padding: 38px 50px;
+        width: calc(100vw - 100px);
+        height: auto;
+    }
+
+    .titulo-sobre{
+        color: var(--cinza);
+        border-bottom: 3px solid var(--verde);
+        width: 7.3rem;
+        font-size: 1.25rem;
+    }
+
+    .slogan-sobre{
+        color: var(--cinza);
+        font-size: 2.1rem;
+        margin: 1.8rem 0rem 1.5rem 0px;
+    }
+
+    .texto-sobre{
+        color: var(--cinza);
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .btn-comecar{
+        width: 9rem;
+        height: 2.1rem;
+        margin-top: 2.4rem;
+        background-color: var(--verde);
+        border: none;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .img-up{
+        display: none;
+    }
+
+    .servicos{
+        background-color: var(--preto);
+        width: calc(100vw - 100px);
+        height: 38.75rem;
+        padding: 38px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-servicos{
+        color: var(--branco);
+        font-size: 1.25rem;
+        border-bottom: 3px solid var(--verde);
+        width: 6.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .id-visual, .design, .dashboard, .sites, .social-media, .trafego{
+        width: 17.3rem;
+        height: 5rem;
+        background-color: var(--branco);
+        border-top: 5px solid var(--verde);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .icone-servicos{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .titulo-jobs{
+        font-size: 1rem;
+        margin-right: 2.5rem;
+    }
+
+    .orcamentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 50px 30px 50px;
+        width: calc(100vw - 100px);
+        height: 38rem;
+    }
+
+    .calendly-inline-widget{
+        z-index: 0;
+        height: 700px;
+    }
+
+    .titulo-orcamentos{
+        color: var(--cinza);
+        font-size: 1.25rem;
+        border-bottom: 3px solid var(--verde);
+        width: 9rem;
+        margin-top: 2.4rem
+    }
+
+    .portifolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--preto);
+        background-color: var(--preto);
+        width: calc(100vw - 100px);
+        height: 20rem;
+        padding: 38px 50px;
+    }
+
+    .titulo-portifolio{
+        color: var(--branco);
+        font-size: 1.25rem;
+        border-bottom: 3px solid var(--verde);
+        width: 7.5rem;
+    }
+
+    .contato{
+        width: calc(100vw - 100px);
+        padding: 38px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-contato{
+        color: var(--cinza);
+        width: 6.1rem;
+        font-size: 1.25rem;
+        border-bottom: 3px solid var(--verde);
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    .logo-formulario{
+        display: none;
+    }
+
+    form>input{
+        width: calc(100% - 0.8rem);
+        height: 2.2rem;
+        border: 1px solid var(--preto);
+        border-radius: none;
+        padding-left: 0.6rem;
+        margin-bottom: 1.1rem;
+        color: var(--cinza);
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .container-enviar>button{
+        width: 4.5rem;
+        height: 1.8rem;
+        border-radius: none;
+        border: none;
+        color: var(--cinza);
+        font-size: 0.8rem;
+        font-weight: 700;
+        background-color: var(--verde);
+    }
+
+
+    .container-enviar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+    footer{
+        width: calc(100vw - 100px);
+        background-color: var(--preto);
+        border-top: 1px solid var(--verde);
+        padding: 38px 50px;
+    }
+
+    .links-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.9rem;
+    }
+
+    .links-menu>a{
+        text-decoration: none;
+        color: var(--branco);
+        font-weight: 400;
+    }
+
+    .logo-rodape{
+        width: 18.1rem;
+        height: 4.5rem;
+        margin-top: 2rem;
+    }
+
+    .dados-rodape{
+        color: var(--branco);
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
