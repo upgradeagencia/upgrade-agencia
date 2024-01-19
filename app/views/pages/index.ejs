@@ -6,127 +6,169 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" type="imagex/png" href="img/LOGO - VERDE 480PX.png">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/LOGO - VERDE 480PX.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10905950507"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10905950507');
+    </script>
     <title>Agência Upgrade</title>
 </head>
 <body>
     <header>
         <nav class="menu">
-            <a href="#">HOME</a>
-            <a href="#">SOBRE NÓS</a>
-            <a href="#">SERVIÇOS</a>
-            <a href="#">ORÇAMENTOS</a>
-            <a href="#">PORTIFÓLIO</a>
-            <a href="#">CONTATO</a>
-            <img src="img/LOGO - VERDE 480PX.png" alt="" class="logo-menu">
+            <a href="#home">HOME</a>
+            <a href="#sobrenos">SOBRE NÓS</a>
+            <a href="#servicos">SERVIÇOS</a>
+            <a href="#orcamento">ORÇAMENTOS</a>
+            <a href="#portfolio">PORTIFÓLIO</a>
+            <a href="#contato">CONTATO</a>
+            <img src="../img/LOGO - VERDE 480PX.png" alt="" class="logo-menu">
         </nav>
     </header>
 
     <main>
-        <section class="imagem-fundo">
-            <img src="#" alt="" class="logo">
+        <section class="imagem-fundo" id="home">
+            <img src="../img/LOGO - VERDE 480PX.svg" alt="" class="logo">
             <h1 class="titulo-home">Faça parte do grupo de empresas que estão elevando seu nível, 
                 de maneira simples, eficaz e com qualidade.
             </h1>
             <button class="btn-contato">Entrar em contato</button>
             <div class="container-logo">
-                <img src="img/UPGRADE AGENCIA DIGITAL.png" alt="" class="logo-texto">
+                <img src="../img/AGENCIA-DIGITAL.svg" alt="" class="logo-texto">
             </div>
         </section>
 
-        <section class="sobre-nos">
-            <h2 class="titulo-sobre">SOBRE NÓS</h2>
-            <h3 class="slogan-sobre">Elevamos o nível do seu negócio</h3>
-            <p class="texto-sobre">Nosso objetivo é te ajudar a elevar o nível do seu negócio, através de um posicionamento digital. 
-                Seja ele, por meio de tráfego pago, social media, web design, design gráfico 
-                ou qualquer outro serviço que oferecemos.
-                Vamos dar um upgrade?
-            </p>
-            <button class="btn-comecar">Começar agora</button>
-            <img src="#" alt="" class="img-up">
+        <section class="sobre-nos" id="sobrenos">
+            <div class="container-sobre">
+                <h2 class="titulo-sobre">SOBRE NÓS</h2>
+                <h3 class="slogan-sobre">Elevamos o nível do seu negócio</h3>
+                <p class="texto-sobre">Nosso objetivo é te ajudar a elevar o nível do seu negócio, através de um posicionamento digital. 
+                    Seja ele, por meio de tráfego pago, social media, web design, design gráfico 
+                    ou qualquer outro serviço que oferecemos.
+                </p>
+                <p class="pergunta">Vamos dar um upgrade?</p>
+                <button class="btn-comecar">Começar agora</button>
+            </div>
+            <img src="../img/SETA-UP.svg" alt="" class="img-up">
         </section>
 
-        <section class="servicos">
-            <h2 class="titulo-servicos">SERVIÇOS</h2>
+        <section class="servicos" id="servicos">
+            <span class="span-servicos">
+                <h2 class="titulo-servicos">SERVIÇOS</h2>
+            </span>
             <div class="linha-1">
                 <div class="id-visual">
-                    <img src="img/icon-id.svg" alt="" class="icone-servicos">
+                    <img src="../img/icon-id.svg" alt="" class="icone-servicos">
                     <h4 class="titulo-jobs">IDENTIDADE VISUAL</h4>
                 </div>
 
                 <div class="design">
-                    <img src="img/icon-design.svg" alt="" class="icone-servicos">
+                    <img src="../img/icon-design.svg" alt="" class="icone-servicos">
                     <h4 class="titulo-jobs">DESIGN GRÁFICO</h4>
                 </div>
 
                 <div class="dashboard">
-                    <img src="img/icon-dashboards.svg" alt="" class="icone-servicos">
+                    <img src="../img/icon-dashboards.svg" alt="" class="icone-servicos">
                     <h4 class="titulo-jobs">DASHBOARDS E RELATÓRIOS</h4>
                 </div>
             </div>
 
             <div class="linha-2">
                 <div class="sites">
-                    <img src="img/icon-sites.svg" alt="" class="icone-servicos">
-                    <h4 class="titulo-jobs">SITES E SISTEMAS WEB</h4>
+                    <img src="../img/icon-sites.svg" alt="" class="icone-servicos">
+                    <h4 class="titulo-jobs" id="title-sites">SITES E SISTEMAS WEB</h4>
                 </div>
 
                 <div class="social-media">
-                    <img src="img/icon-social.svg" alt="" class="icone-servicos">
+                    <img src="../img/icon-social.svg" alt="" class="icone-servicos">
                     <h4 class="titulo-jobs">SOCIAL MEDIA</h4>
                 </div>
 
                 <div class="trafego">
-                    <img src="img/icon-trafego.svg" alt="" class="icone-servicos">
+                    <img src="../img/icon-trafego.svg" alt="" class="icone-servicos">
                     <h4 class="titulo-jobs">TRÁFEGO PAGO</h4>
                 </div>
             </div>
             
         </section>
 
-        <section class="orcamentos">
+        <section class="orcamentos" id="orcamento">
             <h2 class="titulo-orcamentos">ORÇAMENTOS</h2>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/contato-upgradeagc?text_color=1e1e1e&primary_color=73ea00" style="min-width:320px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/contato-upgradeagc/alinhamento?hide_gdpr_banner=1&text_color=1e1e1e&primary_color=73ea00"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </section>
 
-        <section class="portifolio">
-            <h2 class="titulo-portifolio">PORTIFÓLIO</h2>
-            <div>
-               
+        <section class="portifolio" id="portfolio">
+            <h2 class="titulo-portifolio">PORTFÓLIO</h2>
+            <div class="em-breve">
+               <p>EM BREVE...</p>
             </div>
         </section>
 
-        <section class="contato">
-            <h2 class="titulo-contato">CONTATO</h2>
-            <form action="/enviarform" method="post" class="formulario-contato">
-                <input type="text" placeholder="Nome" name="nome" autocomplete="off">
-                <input type="tel" placeholder="Telefone" name="telefone" autocomplete="off">
-                <input type="email" placeholder="E-mail" name="email" autocomplete="off">
-                <input type="text" placeholder="Assunto" name="assunto" autocomplete="off">
-                <div class="container-enviar"><button>Enviar</button></div>
-            </form>
-            <img src="#" alt="" class="logo-formulario">
+        <section class="contato" id="contato">
+            <div class="coluna-form">
+                <h2 class="titulo-contato">CONTATO</h2>
+                <form action="/enviarform" method="post" class="formulario-contato">
+                    <input type="text" placeholder="Nome" name="nome" required>
+                    <input type="tel" placeholder="Telefone" name="telefone" required>
+                    <input type="email" placeholder="E-mail" name="email" required>
+                    <input type="text" placeholder="Assunto" name="assunto" required>
+                    <span class="container-enviar"><button>Enviar</button></span>
+                </form>
+            </div>
+        
+            <span class="img-form">
+                <img src="../img/LOGO - VERDE 480PX.svg" alt="" class="logo-formulario">
+            </span>
         </section>
     </main>
 
     <footer>
-        <div class="links-menu">
-            <a href="#">HOME</a>
-            <a href="#">SOBRE NÓS</a>
-            <a href="#">SERVIÇOS</a>
-            <a href="#">ORÇAMENTOS</a>
-            <a href="#">PORTIFÓLIO</a>
-            <a href="#">CONTATO</a>
-        </div>
+        <section class="rodape-mobile">
+            <div class="links-menu">
+                <a href="#">HOME</a>
+                <a href="#">SOBRE NÓS</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">ORÇAMENTOS</a>
+                <a href="#">PORTIFÓLIO</a>
+                <a href="#">CONTATO</a>
+            </div>
 
-        <img src="img/LOGO HORIZONTAL - VERDE E BRANCO 400PX.png" alt="" class="logo-rodape">
+            <img src="../img/LOGO HORIZONTAL - VERDE E BRANCO 400PX.png" alt="" class="logo-rodape">
 
-        <div class="dados-rodape">
-            <p>AGÊNCIA UPGRADE</p>
-            <P>CNPJ: EM BREVE</P>
-        </div>
+            <div class="dados-rodape">
+                <p>AGÊNCIA UPGRADE</p>
+                <P>CNPJ: EM BREVE</P>
+            </div>
+        </section>
+
+        <section class="rodape-desktop">
+            <div class="links-menu-1">
+                <a href="#">HOME</a>
+                <a href="#">SOBRE NÓS</a>
+                <a href="#">SERVIÇOS</a>
+            </div>
+
+            <div class="links-menu-2">
+                <a href="#">ORÇAMENTOS</a>
+                <a href="#">PORTIFÓLIO</a>
+                <a href="#">CONTATO</a>
+            </div>
+
+            <div class="dados-rodape">
+                <p>AGÊNCIA UPGRADE</p>
+                <P>CNPJ: EM BREVE</P>
+            </div>
+
+            <img src="../img/LOGO HORIZONTAL - VERDE E BRANCO 400PX.png" alt="" class="logo-rodape">
+        </section>
     </footer> 
+    
 </body>
 </html>

@@ -8,6 +8,11 @@
 *{
     margin: 0;   
     font-family: "Inter", sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 main{
@@ -23,9 +28,19 @@ header{
     align-items: center;
     position: fixed;
     z-index: 999;
+    border-bottom: 1px solid var(--verde);
+}
+
+.imagem-fundo{
+    background-color: var(--preto);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1023px){
+    
+
     header{
         width: calc(100vw - 100px);
         height: 5vh;
@@ -33,7 +48,6 @@ header{
         justify-content: center;
         align-items: center;
         padding: 10px 50px;
-        border-bottom: 1px solid var(--verde);
     }
 
     nav>a{
@@ -57,10 +71,6 @@ header{
         padding: 140px 50px 25px 50px;
         width: calc(100vw - 100px);
         height: 55vh;
-        background-color: var(--preto);
-        color: var(--branco);
-        display: flex;
-        flex-direction: column;
     }
     
     .titulo-home{
@@ -109,7 +119,7 @@ header{
         margin: 1.8rem 0rem 1.5rem 0px;
     }
 
-    .texto-sobre{
+    .texto-sobre, .pergunta{
         color: var(--cinza);
         font-size: 0.9rem;
         text-align: justify;
@@ -201,7 +211,6 @@ header{
         align-items: center;
         justify-content: center;
         background-color: var(--preto);
-        background-color: var(--preto);
         width: calc(100vw - 100px);
         height: 20rem;
         padding: 38px 50px;
@@ -257,7 +266,6 @@ header{
         background-color: var(--verde);
     }
 
-
     .container-enviar{
         display: flex;
         flex-direction: column;
@@ -299,5 +307,318 @@ header{
         text-align: center;
         margin-top: 2rem;
     }
+
+    .rodape-desktop{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+
+    nav{
+        display: flex;
+        gap: 2.5rem;
+        padding: 2.25rem 10rem;
+    }
+
+    nav>a{
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--branco);
+        font-weight: 300;
+    }
+
+    .logo-menu{
+        display: none;
+    }
+
+    main{
+        width: calc(100vw - 20rem);
+    }
+
+    .imagem-fundo{
+        width: calc(100vw - 20rem);
+        height: 34rem;
+        padding: 7rem 10rem 2rem 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .logo{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .titulo-home{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .btn-contato{
+        width: 14rem;
+        height: 2.5rem;
+        border-radius: 50px;
+        border: none;
+        color: var(--cinza);
+        background-color: var(--verde);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .logo-texto{
+        width: 7rem;
+        height: auto;
+    }
+
+    .sobre-nos{
+        padding: 2.25rem 10rem;
+        width: calc(100vw - 20rem);
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        align-items: flex-start;
+    }
+
+    .img-up{
+        width: 22rem;
+        height: 35rem;
+    }
+
+    .titulo-sobre, .titulo-servicos, .titulo-orcamentos, .titulo-portifolio, .titulo-contato{
+        color: var(--cinza);
+        border-bottom: 3px solid var(--verde);
+        font-size: 1.8rem;
+    }
+
+    .titulo-sobre{
+        width: 10.5rem;
+        margin-bottom: 1.9rem;
+    }
+
+    .slogan-sobre{
+        color: var(--cinza);
+        font-size: 4.5rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .texto-sobre, .pergunta{
+        color: var(--cinza);
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .pergunta{
+        font-weight: 600;
+        margin-bottom: 2.1rem;
+    }
+    
+    .btn-comecar{
+        width: 15rem;
+        height: 3.1rem;
+        background-color: var(--verde);
+        border: none;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--cinza);
+    }
+
+    .servicos, .orcamentos, .portifolio, .contato{
+        padding: 2.25rem 10rem;
+        width: calc(100vw - 20rem);
+        height: auto;
+    }
+
+    .servicos{
+        background-color: var(--preto);
+    }
+
+    .titulo-servicos{
+        color: var(--branco);
+        width: 9.2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .id-visual, .design, .dashboard, .sites, .social-media, .trafego{
+        width: 16.7rem;
+        height: 6rem;
+        background-color: var(--branco);
+        border-top: 5px solid var(--verde);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .icone-servicos{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .titulo-jobs{
+        font-size: 1rem;
+        margin-right: 2.5rem;
+    }
+
+    .linha-1, .linha-2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    #title-sites{
+        margin-right: 1.9rem;
+    }
+
+    .span-servicos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .orcamentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-orcamentos, .titulo-portifolio, .titulo-contato{
+        margin-bottom: 1.25rem;
+    }
+
+    .calendly-inline-widget{
+        width: calc(100vw - 20rem);
+        height: 82vh;
+    }
+
+    .portifolio{
+        background-color: var(--preto);
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .titulo-portifolio{
+        color: var(--branco);
+        width: 10.9rem;
+    }
+
+    .em-breve{
+        background-color: var(--branco);
+        color: var(--verde);
+        font-size: 2.5rem;
+        font-weight: 500;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formulario-contato{
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        gap: 1.6rem;
+    }
+
+    .formulario-contato>input{
+        height: 4vh;
+        border-radius: 0px;
+        border: 2px solid var(--preto);
+        padding-left: 0.8rem;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .container-enviar>button{
+        width: 8vw;
+        height: 4vh;
+        border-radius: none;
+        border: none;
+        color: var(--cinza);
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: var(--verde);
+    }
+
+    .container-enviar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .logo-formulario{
+        width: 30vw;
+    }
+
+    .titulo-contato{
+        width: 8.8rem;
+    }
+
+    .formulario-contato>input::placeholder{
+        color: var(--preto);
+    }
+
+    .rodape-mobile{
+        display: none;
+    }
+
+    .rodape-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        padding: 2.25rem 10rem;
+        width: calc(100vw - 20rem);
+        height: auto;
+        background-color: var(--preto);
+        color: var(--branco);
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+
+    .links-menu-1, .links-menu-2, .dados-rodape{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .links-menu-1>a, .links-menu-2>a{
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+
+    
+
+
+
+
+
+
+
+
 
 }
